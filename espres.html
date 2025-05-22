@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fef6fa;
+      margin: 0;
+      padding: 0;
+      color: #4b306a;
+    }
+
+    header {
+      background-color: #eac9f0;
+      padding: 20px;
+      text-align: center;
+      color: #4b306a;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #c9dff0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #4b306a;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .producto {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .producto h3 {
+      margin: 15px 0 10px;
+    }
+
+    .producto p {
+      margin: 0;
+      font-weight: bold;
+      color: #ff66b2;
+    }
+
+    footer {
+      background-color: #eac9f0;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .imagen{
+      width: 300px;
+      height: 300px;
+    }
+    button{
+      background-color: #00aae4;
+      border-radius: 20px;
+      height: 50px;
+      width: 200px;
+      border: 1px solid white;
+      font-size: 20px;
+      color: white;
+    }
+    main{
+      position: relative;
+    }
+
+    .cont1{
+      position: absolute;
+      left:300px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GlamBeauty - Tu Tienda de Maquillaje</h1>
+  </header>
+
+  <nav>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="espresso">
+      
+      <h1>Mascara de pestañas Maybeline The Faisies</h1>
+      <h4>Precio $21.175</h4>
+      <h4>Lo que tenes que saber de este producto</h4>
+      <li>Efecto alargador</li>
+      <li>A pruba de agua</li>
+      <li>Es hipoalergenico</li>
+      <br>
+      <button>Comprar</button>
+      
+    </div>
+    <img class="imagen" src="espresso" alt="">
+
+    <div>
+      <h4>Descripcion</h4>
+      <p>Descripción
+       Una bebida echa por café puro con un poco de agua</p>
+      </div>
+  </main>
+
+  <footer>
+    © 2025 Starbucks. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

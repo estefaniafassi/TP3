@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: hsl(26, 100%, 87%);
+      margin: 0;
+      padding: 0;
+      color: #000000;
+    }
+
+    header {
+      background-color: #bd7d4c;
+      padding: 20px;
+      text-align: center;
+      color: #000000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #e1b89c;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #000000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .producto {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .producto img {
+      width: 200%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 100px;
+    }
+
+    .producto h3 {
+      margin: 15px 0 10px;
+    }
+
+    .producto p {
+      margin: 0;
+      font-weight: bold;
+      color: #8c5131;
+    }
+
+    footer {
+      background-color: #c28954;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .imagen{
+      width: 400px;
+      height: 350px;
+    }
+    button{
+      background-color: #974c29;
+      border-radius: 20px;
+      height: 50px;
+      width: 200px;
+      border: 1px solid white;
+      font-size: 20px;
+      color: white;
+    }
+    main{
+      position: relative;
+    }
+
+    .cont1{
+      position: absolute;
+      left:500px;
+    }
+
+    .cont2{
+      left: 700px;;
+      right: 100px;
+    }
+    .cont3{
+      left: 200px;
+    }
+  
+       font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 100;
+            background-color: #f4f4f4;
+        }
+
+        .search-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input[type="text"] {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 300px; 
+            outline: none;
+        }
+
+        .search-container input[type="text"]::placeholder {
+            color: #aaa;
+        }
+
+        .search-container button {
+            background-color: #8c502f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        {    }
+        .search-container button:hover {
+            background-color: #b36200;
+        }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Starbucks</h1>
+  </header>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <button type="submit">Buscar</button>
+</div>
+
+  <nav>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="cont1">
+      
+      <h1>Espresso</h1>
+      <h4>Precio $1.000</h4>
+      <h4>Contenido:</h4>
+      <li>Cafeína: 12g</li>
+      <li>Agua: 14ml</li>
+      <br>
+      <button>Comprar</button>
+      
+    </div>
+    <div class="cont2">
+    <img class="imagen" src="espresso" alt="">
+    </div>
+
+    <div>
+      <div class="cont3">
+        <h4>Descripcion</h4>
+        </div>
+      <p>
+        El espresso es un tipo de café concentrado e intenso, preparado usando agua caliente a presión que pasa a través de café molido fino. Se sirve en pequeñas tazas y es la base de muchas otras bebidas de café, como el capuchino, el latte, el americano y el macchiato. La preparación del espresso produce una crema, una capa de espuma marrón claro y espeso. </p>
+      </div>
+  </main>
+
+  <footer>
+    © 2025 Starbucks. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
